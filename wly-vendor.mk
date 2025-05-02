@@ -1130,6 +1130,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-impl \
     lib2DSlender \
     libAlgoInterface \
+    libextendfile \
     libAlgoProcess \
     libAncFilter \
     libAncHumBokeh \
