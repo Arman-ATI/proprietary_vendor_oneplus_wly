@@ -847,7 +847,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_sx933x_down_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_sx933x_down_0.json \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/oneplus/wly/proprietary/odm/etc/wifi.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi.cfg \
+    vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0a \
+    vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlan.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0c \
+    vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlan.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0e \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
+    vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlang.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlang.b0a \
+    vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlang.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlang.b0c \
+    vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlang.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlang.b0e \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlang.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlang.elf \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/bin_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/bin_version \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/cnss_diag.conf:$(TARGET_COPY_OUT_ODM)/etc/wifi/cnss_diag.conf \
