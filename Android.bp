@@ -10420,6 +10420,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dual_sat.so",
             ],
             shared_libs: [
+                "libc++_shared",
                 "liblog",
                 "libmpbase",
                 "libdualcam_video_optical_zoom",
@@ -10451,6 +10452,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dual_zoomtranslator.so",
             ],
             shared_libs: [
+                "libc++_shared",
                 "liblog",
                 "libdualcam_optical_zoom_control",
                 "libcutils",
@@ -11238,6 +11240,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_triple_sat.so",
             ],
             shared_libs: [
+                "libc++_shared",
                 "liblog",
                 "libmpbase",
                 "libtriplecam_video_optical_zoom",
@@ -11269,6 +11272,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_triple_zoomtranslator.so",
             ],
             shared_libs: [
+                "libc++_shared",
                 "liblog",
                 "libtriplecam_optical_zoom_control",
                 "libcutils",
