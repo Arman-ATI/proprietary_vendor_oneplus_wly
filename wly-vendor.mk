@@ -1137,7 +1137,6 @@ PRODUCT_PACKAGES += \
     libAncHumBokehPost \
     libAncHumVideoBase \
     libAncHumanDoubleExposure \
-    libAncHumanRetain \
     libAncHumanSegFigureFusion \
     libAncSegBaseSdk \
     libAncSegmentSdk \
