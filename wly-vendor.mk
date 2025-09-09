@@ -10,6 +10,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/wly/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
     vendor/oneplus/wly/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_cal.acdb \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/wly/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/wly/proprietary/odm/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode:$(TARGET_COPY_OUT_ODM)/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode \
     vendor/oneplus/wly/proprietary/odm/etc/camera/anc/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model \
@@ -109,6 +110,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212.png \
     vendor/oneplus/wly/proprietary/odm/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212_pre.bin \
     vendor/oneplus/wly/proprietary/odm/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/213.png \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/fb_model/AIdeblemishSnapMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/AIdeblemishSnapMask.bin \
     vendor/oneplus/wly/proprietary/odm/etc/camera/fb_model/beauty_body.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/beauty_body.bin \
     vendor/oneplus/wly/proprietary/odm/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyeBright.png \
     vendor/oneplus/wly/proprietary/odm/etc/camera/fb_model/eyesMask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyesMask.png \
@@ -456,6 +458,77 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/etc/camera/gesture/tt_hand_kp_v6.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_kp_v6.0.model \
     vendor/oneplus/wly/proprietary/odm/etc/camera/gesture/tt_hand_lr_v3.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_lr_v3.0.model \
     vendor/oneplus/wly/proprietary/odm/etc/camera/libiceainr_model.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/libiceainr_model.dlc \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/ByYo3If \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Cold.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/DL_A_MoneyBall.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_A_MoneyBall.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/DL_B_Inception.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_B_Inception.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/DL_C_R3_80.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_C_R3_80.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/DL_D_G4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_D_G4.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_L_B6.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/Delta400.3dl.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Delta400.3dl.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/Emerald.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Emerald.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/Martin.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Martin.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/OPLUSR0604.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/OPLUSR0604.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/Radiance.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Radiance.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/Serenity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Serenity.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/Texture-70.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Texture-70.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/White.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/White.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/black_gold.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/black_gold.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/bright_coloured.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/bright_coloured.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/cola.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/cola.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/drjw1994.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/drjw1994.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/drjw2010.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/drjw2010.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/fuji-cc-high.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-cc-high.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/fuji-cc-low.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-cc-low.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/fuji-eterna-v2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-eterna-v2.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/fuji-nc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-nc.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/fuji-proNegHi.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-proNegHi.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/fuji.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/fuji_cc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji_cc.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gourmet.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gourmet.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-24hour-city.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-24hour-city.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-3dcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-3dcity.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-after-glow.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-after-glow.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-azure-water.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-azure-water.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-beach.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-beach.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-blue-water.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-blue-water.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-coco-grove.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-coco-grove.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-crisp-fall.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-crisp-fall.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-desert.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-desert.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-earth.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-earth.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-glazed-tile.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-glazed-tile.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-japan.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-japan.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-lake.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-lake.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-mountainous.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-mountainous.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-old-times.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-old-times.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-rosy.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-rosy.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/interstellar_space.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/interstellar_space.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/kodak.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/kodak.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/meicam.child.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/meicam.child.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/mono.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/morandi.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/morandi.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/natural.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/natural.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/neon-2020.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/oplus-cyberpunk.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-cyberpunk.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/oplus-nightcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-nightcity.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/oplus-yellow-blue.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-yellow-blue.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/p4_1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/p4_1.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/p4_3.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/p4_3.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/rJ5g5vPWG:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/rJ5g5vPWG \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/red-red.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/red-red.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/sky-blue.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/sky-blue.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/tone-of-light.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/tone-of-light.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/tree-green.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/tree-green.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/vivid-cool.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/vivid-cool.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/vivid-lut.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/vivid-lut.cube.rgb.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/camera/meishe_lut/vivid-warm.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/vivid-warm.cube.rgb.bin \
     vendor/oneplus/wly/proprietary/odm/etc/camera/micFilter/blue_pink_3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/blue_pink_3.png \
     vendor/oneplus/wly/proprietary/odm/etc/camera/micFilter/curve_0.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/curve_0.png \
     vendor/oneplus/wly/proprietary/odm/etc/camera/micFilter/green_orange_2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/green_orange_2.png \
@@ -843,10 +916,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_lps22hb.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_lps22hb.json \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_lsm6dso_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_lsm6dso_0.json \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_mmc56x3x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_mmc56x3x.json \
+    vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_oplus_flight_detect.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_oplus_flight_detect.json \
+    vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_pocket.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_pocket.json \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_sx933x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_sx933x_0.json \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/config/waipio_qrd_sx933x_down_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_sx933x_down_0.json \
     vendor/oneplus/wly/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/oneplus/wly/proprietary/odm/etc/wifi.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi.cfg \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0a \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlan.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0c \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/bdwlan.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0e \
@@ -876,7 +950,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideo.bin \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideolite.bin \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
-    vendor/oneplus/wly/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b00 \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b01 \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b02 \
@@ -1094,9 +1167,6 @@ PRODUCT_PACKAGES += \
     libopencv3a \
     libopestriping \
     libos \
-    libqll \
-    libqll10 \
-    libqllengine \
     libqshcamera \
     libsfeShiftExtrapolation \
     libsynx \
@@ -1130,7 +1200,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-impl \
     lib2DSlender \
     libAlgoInterface \
-    libextendfile \
     libAlgoProcess \
     libAncFilter \
     libAncHumBokeh \
@@ -1186,7 +1255,6 @@ PRODUCT_PACKAGES += \
     libWaterMode \
     libXDocProcessSDK \
     libYTCommon \
-    lib_lvacfs \
     lib_rectify \
     libaiboost \
     libaiboost_hexagon \
@@ -1253,13 +1321,12 @@ PRODUCT_PACKAGES += \
     libdualcam_video_optical_zoom \
     libeffect_custom \
     libexif-jpeg-aps \
+    libextendfile \
     libextensionlayer \
     libgf_hal_G7 \
     libhwconfigurationutil \
     libhyperlapse \
-    liblvacfs_wrapper \
     libmpbase \
-    libop-ai-beauty-body-detection \
     libop-ai-beauty-faceretouch-cn \
     liboplus-uah-client \
     liboptical_zoom_dc \
