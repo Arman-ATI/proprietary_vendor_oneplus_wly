@@ -1245,6 +1245,7 @@ cc_prebuilt_library_shared {
                 "libchilog",
                 "libc++",
                 "libcom.qti.chinodeutils",
+                "libhwconfigurationutil",
                 "liblog",
                 "libc",
                 "libm",
@@ -7375,31 +7376,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cameraextension-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.cammidasservice@1.0",
     owner: "oneplus",
     strip: {
@@ -8300,6 +8276,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libAlgoProcess",
                 "libapsjpeg",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -8325,7 +8302,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloctypes",
                 "libqdMetaData",
                 "vendor.qti.hardware.display.mapper@4.0",
@@ -8348,6 +8325,7 @@ cc_prebuilt_library_shared {
                 "libselinux",
                 "libexif-jpeg-aps",
                 "libextendfile",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -8881,6 +8859,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libPolarrRender",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -9148,6 +9127,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -9802,8 +9782,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libm",
                 "libdl",
-                "libEGL",
-                "libGLESv2",
                 "liblog",
                 "libc",
             ],
@@ -9957,6 +9935,31 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libOpenCL",
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalog",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libalog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -12053,6 +12056,8 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libsharebuffer_impl.so",
             ],
             shared_libs: [
+                "libdmabufheap",
+                "libnativewindow",
                 "libui",
                 "libutils",
                 "libcutils",
@@ -12397,56 +12402,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.commondcs-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.orms@1.0",
     owner: "oneplus",
     strip: {
@@ -12462,31 +12417,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -12540,31 +12470,6 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "com.qti.chi.override",
                 "vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.sendextcamcmd-V2-ndk",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -12659,7 +12564,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV69Skel",
+    name: "odm_lib_rfsa_adsp_aiboost_libQnnHtpV69Skel_so",
     filename: "libQnnHtpV69Skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpV69Skel.so",
@@ -12668,7 +12573,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libaiboostubwc_skel",
+    name: "odm_lib_rfsa_adsp_aiboost_libaiboostubwc_skel_so",
     filename: "libaiboostubwc_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so",
@@ -12677,7 +12582,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpAltPrepV69Skel",
+    name: "odm_lib_rfsa_adsp_libQnnHtpAltPrepV69Skel_so",
     filename: "libQnnHtpAltPrepV69Skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnHtpAltPrepV69Skel.so",
@@ -12686,7 +12591,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeHtpV68Skel",
+    name: "odm_lib_rfsa_adsp_libSnpeHtpV68Skel_so",
     filename: "libSnpeHtpV68Skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libSnpeHtpV68Skel.so",
@@ -12695,7 +12600,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeHtpV69Skel",
+    name: "odm_lib_rfsa_adsp_libSnpeHtpV69Skel_so",
     filename: "libSnpeHtpV69Skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libSnpeHtpV69Skel.so",
@@ -12704,7 +12609,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSuperRawPost_skel",
+    name: "odm_lib_rfsa_adsp_libSuperRawPost_skel_so",
     filename: "libSuperRawPost_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libSuperRawPost_skel.so",
@@ -12713,7 +12618,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libVDHexagonBlurless_v2_skel",
+    name: "odm_lib_rfsa_adsp_libVDHexagonBlurless_v2_skel_so",
     filename: "libVDHexagonBlurless_v2_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so",
@@ -12722,7 +12627,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libaisr_skel",
+    name: "odm_lib_rfsa_adsp_libaisr_skel_so",
     filename: "libaisr_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libaisr_skel.so",
@@ -12731,7 +12636,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarc_gk_pt_hvx_skel",
+    name: "odm_lib_rfsa_adsp_libarc_gk_pt_hvx_skel_so",
     filename: "libarc_gk_pt_hvx_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so",
@@ -12740,7 +12645,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarc_htp_driver_skel",
+    name: "odm_lib_rfsa_adsp_libarc_htp_driver_skel_so",
     filename: "libarc_htp_driver_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libarc_htp_driver_skel.so",
@@ -12749,7 +12654,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_dualcam_refocus_skel",
+    name: "odm_lib_rfsa_adsp_libarcsoft_dualcam_refocus_skel_so",
     filename: "libarcsoft_dualcam_refocus_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so",
@@ -12758,7 +12663,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_hdrplus_hvx_skel",
+    name: "odm_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_so",
     filename: "libarcsoft_hdrplus_hvx_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so",
@@ -12767,7 +12672,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_portraitSN_hvx_skel",
+    name: "odm_lib_rfsa_adsp_libarcsoft_portraitSN_hvx_skel_so",
     filename: "libarcsoft_portraitSN_hvx_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so",
@@ -12776,7 +12681,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_portraitsn_hvx_skel",
+    name: "odm_lib_rfsa_adsp_libarcsoft_portraitsn_hvx_skel_so",
     filename: "libarcsoft_portraitsn_hvx_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel.so",
@@ -12785,7 +12690,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libc++.so",
+    name: "odm_lib_rfsa_adsp_libc++_so_1",
     filename: "libc++.so.1",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libc++.so.1",
@@ -12794,7 +12699,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libc++abi.so",
+    name: "odm_lib_rfsa_adsp_libc++abi_so_1",
     filename: "libc++abi.so.1",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libc++abi.so.1",
@@ -12803,7 +12708,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libcalculator_skel",
+    name: "odm_lib_rfsa_adsp_libcalculator_skel_so",
     filename: "libcalculator_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libcalculator_skel.so",
@@ -12812,7 +12717,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhdr_skel",
+    name: "odm_lib_rfsa_adsp_libhdr_skel_so",
     filename: "libhdr_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libhdr_skel.so",
@@ -12821,7 +12726,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhvxFaceBeautyPre_skel",
+    name: "odm_lib_rfsa_adsp_libhvxFaceBeautyPre_skel_so",
     filename: "libhvxFaceBeautyPre_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so",
@@ -12830,7 +12735,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libktvdrc",
+    name: "odm_lib_rfsa_adsp_libktvdrc_so",
     filename: "libktvdrc.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libktvdrc.so",
@@ -12839,7 +12744,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libktveffect",
+    name: "odm_lib_rfsa_adsp_libktveffect_so",
     filename: "libktveffect.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libktveffect.so",
@@ -12848,7 +12753,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libktveq",
+    name: "odm_lib_rfsa_adsp_libktveq_so",
     filename: "libktveq.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libktveq.so",
@@ -12857,7 +12762,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libktvns",
+    name: "odm_lib_rfsa_adsp_libktvns_so",
     filename: "libktvns.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libktvns.so",
@@ -12866,7 +12771,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libktvpitchshift",
+    name: "odm_lib_rfsa_adsp_libktvpitchshift_so",
     filename: "libktvpitchshift.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libktvpitchshift.so",
@@ -12875,7 +12780,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libktvreverb",
+    name: "odm_lib_rfsa_adsp_libktvreverb_so",
     filename: "libktvreverb.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libktvreverb.so",
@@ -12884,7 +12789,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libktvvolume",
+    name: "odm_lib_rfsa_adsp_libktvvolume_so",
     filename: "libktvvolume.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libktvvolume.so",
@@ -12893,7 +12798,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsnpe_dsp_v65_domains_v2_skel",
+    name: "odm_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so",
     filename: "libsnpe_dsp_v65_domains_v2_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so",
@@ -12902,7 +12807,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsnpe_dsp_v66_domains_v2_skel",
+    name: "odm_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so",
     filename: "libsnpe_dsp_v66_domains_v2_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so",
@@ -12911,7 +12816,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsnpe_dsp_v68_domains_v3_skel",
+    name: "odm_lib_rfsa_adsp_libsnpe_dsp_v68_domains_v3_skel_so",
     filename: "libsnpe_dsp_v68_domains_v3_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so",
@@ -12920,7 +12825,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libtfadsp_rx",
+    name: "odm_lib_rfsa_adsp_libtfadsp_rx_so",
     filename: "libtfadsp_rx.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libtfadsp_rx.so",
@@ -12929,7 +12834,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libtfadsp_tx",
+    name: "odm_lib_rfsa_adsp_libtfadsp_tx_so",
     filename: "libtfadsp_tx.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libtfadsp_tx.so",
@@ -12938,7 +12843,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvdblurless_5.0.2_skel",
+    name: "odm_lib_rfsa_adsp_libvdblurless_5_0_2_skel_so",
     filename: "libvdblurless_5.0.2_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libvdblurless_5.0.2_skel.so",
@@ -12947,7 +12852,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvdblurless_skel",
+    name: "odm_lib_rfsa_adsp_libvdblurless_skel_so",
     filename: "libvdblurless_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libvdblurless_skel.so",
@@ -12956,7 +12861,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvdsuperphoto_skel",
+    name: "odm_lib_rfsa_adsp_libvdsuperphoto_skel_so",
     filename: "libvdsuperphoto_skel.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libvdsuperphoto_skel.so",

@@ -1173,7 +1173,6 @@ PRODUCT_PACKAGES += \
     libtfestriping \
     libthreadutils \
     libubifocus \
-    vendor.oplus.hardware.cameraextension-V1-ndk_platform \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
@@ -1263,6 +1262,7 @@ PRODUCT_PACKAGES += \
     libaiseg \
     libalCFR \
     libalgoFisheye \
+    libalog \
     libancbase_rt_bokeh \
     libancbase_rt_fusion \
     libancbase_segbase \
@@ -1353,49 +1353,45 @@ PRODUCT_PACKAGES += \
     libtriplecam_video_optical_zoom \
     libwatermark_photo \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
-    vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
-    vendor.oplus.hardware.commondcs-V1-ndk_platform \
     vendor.oplus.hardware.orms@1.0 \
-    vendor.oplus.hardware.osense.client-V1-ndk_platform \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
-    vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.oplus.hardware.urcc-V1-ndk_platform \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
-    libQnnHtpV69Skel \
-    libaiboostubwc_skel \
-    libQnnHtpAltPrepV69Skel \
-    libSnpeHtpV68Skel \
-    libSnpeHtpV69Skel \
-    libSuperRawPost_skel \
-    libVDHexagonBlurless_v2_skel \
-    libaisr_skel \
-    libarc_gk_pt_hvx_skel \
-    libarc_htp_driver_skel \
-    libarcsoft_dualcam_refocus_skel \
-    libarcsoft_hdrplus_hvx_skel \
-    libarcsoft_portraitSN_hvx_skel \
-    libarcsoft_portraitsn_hvx_skel \
-    libc++.so \
-    libc++abi.so \
-    libcalculator_skel \
-    libhdr_skel \
-    libhvxFaceBeautyPre_skel \
-    libktvdrc \
-    libktveffect \
-    libktveq \
-    libktvns \
-    libktvpitchshift \
-    libktvreverb \
-    libktvvolume \
-    libsnpe_dsp_v65_domains_v2_skel \
-    libsnpe_dsp_v66_domains_v2_skel \
-    libsnpe_dsp_v68_domains_v3_skel \
-    libtfadsp_rx \
-    libtfadsp_tx \
-    libvdblurless_5.0.2_skel \
-    libvdblurless_skel \
-    libvdsuperphoto_skel \
+    odm_lib_rfsa_adsp_aiboost_libQnnHtpV69Skel_so \
+    odm_lib_rfsa_adsp_aiboost_libaiboostubwc_skel_so \
+    odm_lib_rfsa_adsp_libQnnHtpAltPrepV69Skel_so \
+    odm_lib_rfsa_adsp_libSnpeHtpV68Skel_so \
+    odm_lib_rfsa_adsp_libSnpeHtpV69Skel_so \
+    odm_lib_rfsa_adsp_libSuperRawPost_skel_so \
+    odm_lib_rfsa_adsp_libVDHexagonBlurless_v2_skel_so \
+    odm_lib_rfsa_adsp_libaisr_skel_so \
+    odm_lib_rfsa_adsp_libarc_gk_pt_hvx_skel_so \
+    odm_lib_rfsa_adsp_libarc_htp_driver_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_dualcam_refocus_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_portraitSN_hvx_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_portraitsn_hvx_skel_so \
+    odm_lib_rfsa_adsp_libc++_so_1 \
+    odm_lib_rfsa_adsp_libc++abi_so_1 \
+    odm_lib_rfsa_adsp_libcalculator_skel_so \
+    odm_lib_rfsa_adsp_libhdr_skel_so \
+    odm_lib_rfsa_adsp_libhvxFaceBeautyPre_skel_so \
+    odm_lib_rfsa_adsp_libktvdrc_so \
+    odm_lib_rfsa_adsp_libktveffect_so \
+    odm_lib_rfsa_adsp_libktveq_so \
+    odm_lib_rfsa_adsp_libktvns_so \
+    odm_lib_rfsa_adsp_libktvpitchshift_so \
+    odm_lib_rfsa_adsp_libktvreverb_so \
+    odm_lib_rfsa_adsp_libktvvolume_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_v68_domains_v3_skel_so \
+    odm_lib_rfsa_adsp_libtfadsp_rx_so \
+    odm_lib_rfsa_adsp_libtfadsp_tx_so \
+    odm_lib_rfsa_adsp_libvdblurless_5_0_2_skel_so \
+    odm_lib_rfsa_adsp_libvdblurless_skel_so \
+    odm_lib_rfsa_adsp_libvdsuperphoto_skel_so \
     manifest_oplus_cameraextension_aidl.xml \
     manifest_oplus_fingerprint.xml \
     vendor.qti.camera.provider@2.7-service_64 \

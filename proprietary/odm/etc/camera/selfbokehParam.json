@@ -44,67 +44,6 @@
             "HairMattingROIMode": "inner",
             "NeonPerformanceMode":0,
             "BokehLutPerformanceMode":0
-        },
-        {
-            "product_name": "8250",
-            "SegMode": "DSP",
-            "DepthMode": "DSP",
-            "SegPerformanceMode": "POWER_SAVER",
-            "DepthPerformanceMode": "POWER_SAVER",
-            "SegEnable": true,
-            "DepthEnable": true,
-            "MattingEnable": true,
-            "HairMattingRuntime": "DSP_FIXED8_TF",
-            "HairMattingPerformanceMode": "POWER_SAVER",
-            "HairMattingImageWidth": 576,
-            "HairMattingImageHeight": 768,
-            "HairMattingROIMode": "inner"
-        },
-        {
-            "product_name": "7125",
-            "SegMode": "DSP",
-            "DepthMode": "DSP",
-            "SegPerformanceMode": "POWER_SAVER",
-            "DepthPerformanceMode": "POWER_SAVER",
-            "SegEnable": true,
-            "DepthEnable": false,
-            "MattingEnable": false
-        },
-        {
-            "product_name": "5G-B",
-            "SegMode": "DSP",
-            "DepthMode": "DSP",
-            "SegPerformanceMode": "kSustainedSpeed",
-            "DepthPerformanceMode": "kSustainedSpeed",
-            "SegEnable": true,
-            "DepthEnable": false,
-            "MattingEnable": false
-        },
-        {
-            "product_name": "NEXT-D",
-            "SegMode": "DSP",
-            "DepthMode": "DSP",
-            "SegPerformanceMode": "kSustainedSpeed",
-            "DepthPerformanceMode": "kSustainedSpeed",
-            "MattingPerformanceMode": "kSustainedSpeed",
-            "SegEnable": true,
-            "DepthEnable": false,
-            "MattingEnable": false,
-            "HairMattingRuntime": "DSP_FIXED8_TF",
-            "HairMattingPerformanceMode": "POWER_SAVER",
-            "HairMattingImageWidth": 576,
-            "HairMattingImageHeight": 768,
-            "HairMattingROIMode": "inner"
-        },
-        {
-            "product_name": "NEXT-A",
-            "SegMode": "DSP",
-            "DepthMode": "DSP",
-            "SegPerformanceMode": "kSustainedSpeed",
-            "DepthPerformanceMode": "kSustainedSpeed",
-            "SegEnable": true,
-            "DepthEnable": false,
-            "MattingEnable": false
         }
     ]
 }
