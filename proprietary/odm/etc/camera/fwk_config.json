@@ -265,6 +265,9 @@
             "com.instagram.android",
             "com.facebook.katana"
         ],
+        "forbit_3rd_app_reconfigure": [
+            "com.google.android.apps.tachyon"
+        ],
         "defaultMaxPreviewWidth": 3168,
         "defaultMaxPreviewHeight": 3168,
         "resolutionFilterForNotAddSizeAPI1": [
@@ -496,6 +499,7 @@
         ],
         "app_disable_fb_activity": [
             "com.whatsapp.camera.CameraActivity",
+            "com.whatsapp.camera.ui.CameraActivity",
             "com.whatsapp.qrcode.contactqr.ContactQrActivity",
             "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity"
         ]
@@ -589,5 +593,26 @@
         ],
         "limit_exposure_time_parameter":true,
         "limit_physical_multi_resolution_size":true
+    },
+    "com.playfake.instafake.funsta": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.shuru.nearme": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080,
+        "needMatchPkgName": true,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "3280x2464",
+            "2772x1240",
+            "4096x3072",
+            "1440x1080",
+            "2412x1080",
+            "1280x960",
+            "1024x768",
+            "720x540",
+            "640x480",
+            "320x240"
+        ]
     }
 }
