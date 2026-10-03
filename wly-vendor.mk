@@ -953,6 +953,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideo.bin \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideolite.bin \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b00 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b01 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b02 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b03 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b04 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b05 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b06 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b07 \
+    vendor/oneplus/wly/proprietary/odm/vendor/firmware/facereg.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.mdt \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b00 \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b01 \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b02 \
