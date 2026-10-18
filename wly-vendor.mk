@@ -971,6 +971,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b06 \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b07 \
     vendor/oneplus/wly/proprietary/odm/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.mdt \
+    vendor/oneplus/wly/proprietary/vendor/etc/acdbdata/waipio_mtp/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/Audio_Parameter_Version.txt \
+    vendor/oneplus/wly/proprietary/vendor/etc/acdbdata/waipio_mtp/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/FTM/acdb_cal.acdb \
+    vendor/oneplus/wly/proprietary/vendor/etc/acdbdata/waipio_mtp/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/FTM/workspaceFileXml.qwsp \
+    vendor/oneplus/wly/proprietary/vendor/etc/acdbdata/waipio_mtp/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/acdb_cal.acdb \
     vendor/oneplus/wly/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
     vendor/oneplus/wly/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/wly/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -1185,7 +1189,6 @@ PRODUCT_PACKAGES += \
     libtfestriping \
     libthreadutils \
     libubifocus \
-    vendor.oplus.hardware.cameraextension-V1-ndk_platform \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
