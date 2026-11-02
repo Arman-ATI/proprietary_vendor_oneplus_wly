@@ -855,6 +855,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oneplus/wly/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/wly/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
+    vendor/oneplus/wly/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc \
     vendor/oneplus/wly/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/wly/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/wly/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
@@ -940,6 +941,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/sar-vendor-cmd.xml:$(TARGET_COPY_OUT_ODM)/etc/wifi/sar-vendor-cmd.xml \
     vendor/oneplus/wly/proprietary/odm/etc/wifi/wifisar.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi/wifisar.cfg \
     vendor/oneplus/wly/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
+    vendor/oneplus/wly/proprietary/odm/init.oplus.face.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.face.rc \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/com.qti.sensormodule.waipio.qtech_imx615.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.waipio.qtech_imx615.bin \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/com.qti.sensormodule.waipio.qtech_ov08a10.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.waipio.qtech_ov08a10.bin \
     vendor/oneplus/wly/proprietary/odm/lib64/camera/com.qti.sensormodule.waipio.qtech_s5kjn1sq03.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.waipio.qtech_s5kjn1sq03.bin \
@@ -1004,7 +1006,72 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/wly/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
     vendor/oneplus/wly/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
     vendor/oneplus/wly/proprietary/vendor/firmware/CAMERA_ICP_480.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_480.elf \
+    vendor/oneplus/wly/proprietary/vendor/firmware/a730_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_sqe.fw \
+    vendor/oneplus/wly/proprietary/vendor/firmware/a730_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b00 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/a730_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b01 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/a730_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b02 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/a730_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.elf \
+    vendor/oneplus/wly/proprietary/vendor/firmware/a730_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.mbn \
+    vendor/oneplus/wly/proprietary/vendor/firmware/a730_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.mdt \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b00 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b01 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b02 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b03 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b04 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b05 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b06 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b07 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b08 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b09 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b10 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b11 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b12 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b13 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b14 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b15 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b16 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b17 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b18 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b19 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.mbn \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass-lt-21.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.mdt \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b04 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b05 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b06 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b07 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b10 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b11 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b12 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b13 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b14 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b15 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b16 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b00 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b01 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b02 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b03 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b04 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b05 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b06 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b07 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b08 \
+    vendor/oneplus/wly/proprietary/vendor/firmware/evautil64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.mdt \
+    vendor/oneplus/wly/proprietary/vendor/firmware/gmu_gen70000.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70000.bin \
     vendor/oneplus/wly/proprietary/vendor/firmware/sn100u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn100u.bin \
+    vendor/oneplus/wly/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/oneplus/wly/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/oneplus/wly/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/oneplus/wly/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/oneplus/wly/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
     vendor/oneplus/wly/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_t.bin \
@@ -1144,6 +1211,7 @@ PRODUCT_PACKAGES += \
     libaidenoiserv2 \
     libbitmlengine \
     libbitmlenginev2 \
+    libcamera2ndk_vendor \
     libcamera_nn_stub \
     libcamerapostproc \
     libcamxcommonutils \
@@ -1163,6 +1231,9 @@ PRODUCT_PACKAGES += \
     libcamxtintlessalgo \
     libchilog \
     libcom.qti.chinodeutils \
+    libcv_common_waipio \
+    libcvp2_1 \
+    libeva_waipio \
     libhdr10plus \
     libhdr_stub \
     libipebpsstriping \
@@ -1182,28 +1253,22 @@ PRODUCT_PACKAGES += \
     libopencv \
     libopencv3a \
     libopestriping \
-    libos \
+    libqll \
+    libqll10 \
+    libqllengine \
     libqshcamera \
     libsfeShiftExtrapolation \
-    libsynx \
+    libsnsapi_waipio \
+    libsynx_waipio \
     libtfestriping \
-    libthreadutils \
     libubifocus \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    libQnnHtp.aiboost \
     libQnnHtpPrepare.aiboost \
     libQnnHtpV69Stub.aiboost \
-    libQnnSystem.aiboost \
-    libQnnHtp.aiframe \
-    libQnnHtpPrepare.aiframe \
     libQnnHtpV69Stub.aiframe \
-    libQnnSystem.aiframe \
-    libaiboost_qnn_external_delegate \
-    libqcom_llm \
-    libtransformer_lite \
     anc.hal \
     android.hardware.secure_element@1.0-impl \
     com.qti.sensor.imx615 \
@@ -1279,9 +1344,7 @@ PRODUCT_PACKAGES += \
     libYTCommon \
     lib_lvacfs \
     lib_rectify \
-    libaiboost \
     libaiboost_hexagon \
-    libaiboost_llm \
     libaisal \
     libaisd \
     libaiseg \
@@ -1362,7 +1425,6 @@ PRODUCT_PACKAGES += \
     libpngwrapper \
     libpnscr2 \
     libremosaic_wrapper \
-    librpmbengclient \
     libsaveshaderbin \
     libsecurity_event_dcs \
     libsharebuffer \
@@ -1373,11 +1435,11 @@ PRODUCT_PACKAGES += \
     libstface_fd_api \
     libstfaceunlockocl \
     libstfd_mobile_api \
-    libtfa98xx \
     libthirdcapability \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libwatermark_photo \
+    libziparchive_odm \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
@@ -1419,8 +1481,10 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libvdblurless_skel_so \
     odm_lib_rfsa_adsp_libvdsuperphoto_skel_so \
     manifest_oplus_cameraextension_aidl.xml \
+    manifest_oplus_face.xml \
     manifest_oplus_fingerprint.xml \
     vendor.qti.camera.provider@2.7-service_64 \
+    vendor.oplus.hardware.biometrics.face@1.0-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.secure_element@1.2-service \
